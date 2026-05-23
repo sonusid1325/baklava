@@ -1,0 +1,11 @@
+/work/
+/out/
+
+/airootfs/usr/local/bin/baklava-installer
+/airootfs/usr/share/baklava/
+/airootfs/usr/share/dots-hyprland/
+
+*.swp
+*.tmp
+*.bak
+.DS_Store
