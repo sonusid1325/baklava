@@ -22,7 +22,7 @@ prep:
 	mkdir -p $(AIROOTFS)/usr/local/bin $(BAKLAVA_SHARE) $(DOTS_SHARE) $(BAKLAVA_REPO_DEST) $(GRUB_THEMES_DEST)
 
 installer: prep
-	cd $(INSTALLER_DIR) && go build -o $(INSTALLER_BIN) .
+	cd $(INSTALLER_DIR) && go build -buildvcs=false -o $(INSTALLER_BIN) .
 
 packages: prep
 	cp $(CURDIR)/packages.x86_64 $(BAKLAVA_SHARE)/packages.x86_64
